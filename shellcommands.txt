@@ -1,0 +1,6 @@
+The following command will replace the specified column header in the csv file already created
+sed -i '1s/.*/slno, stuname, usn, Sys-in, Time-in, Time-out, Remarks/' TestUnixcutcommand.csv
+The following command will extract the date and time of today's date
+echo $(date +%x_%r)
+The following command will sort the unsorted csv file in the specified manner
+sort -t, -k2 TestUnixcutcommand.csv > Sorted2col.csv
